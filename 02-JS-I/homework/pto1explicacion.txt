@@ -1,0 +1,17 @@
+1) Variables: Sirven para asignar un valor, darle nombre a algo para utilizarlo luego en el codigo. Ej. var MiNombre = 'Juan';
+2) Strings: son "hilos", uniones de caracteres (letras, numeros, etc) que quieren ser utilizados como texto, y para eso, se pone entre comillas. en el Ej. de arriba "Juan" es una String.
+3) Funciones: Se utilizan para almacenar código dentro de ellas, asignandole un "nombre" para poder reutilizarlas luego, y así no tener que repetirse.
+Dentro de ellas, se realizan operaciones con las variables, ejecutando el código de la función.
+A las variables dentro de la función se las identifica como argumentos, y en las funciones que implican una operación entre variables se les inserta el comando, o declaración, "return" que arroja un resultado y terminá la ejecución de la función (si hubiera código despues, no se ejecuta).
+Por el concepto de "scope", o "alcance", el resultado "arrojado" por el "return" siempre quedará "dentro" de la función y para ser utilizado, deberá ser "llamado" por fuera de la función.
+Si las variables no estuvieran definidas dentro de la función, luego de inspeccionar dentro de la misma, el interprete se fijará por fuera de la función si dicha variable no se encuentra definida, y en caso de estarlo, tomará ese valor/definición para utilizarlo dentro de la función.
+Ej. en la siguiente funcion
+function dividirDosNumeros(a, b) {
+  var producto = a / b;
+  return producto;
+}
+dividirDosNumeros(6, 3);
+console.log(producto)
+la Funcion permite realizar la operación de división entre variables a y b, ejecutando el código de la misma. En este caso, al ejecutar la declaración "return" nos va dar el resultado de la división entre las variables a y b, cuyos argumentos son en esta funciòn 6 y 3. Pero por el concepto de "scope" no veremos expresado dicho resultado.
+Para poder verlo en la consola, debemos insertar por fuera de la función otra variable que lo "llame" y lo exprese, var resultado=dividirDosNumeros(6,3) y recien ahi ejecutar el comando console.log(resultado) para que exprese en la consola ese resultado.
+4)  Declaraciones "if" y Valores booleanos (`true`, `false`): A las declaraciones "if" (si algo "es" o "no es"), se las conoce como "control de flujo", la función se va a ejecutar dependiendo de si un elemento resulta ser de una u otra manera; Relacionado con los valores "booleanos", True o False, que expresan una realidad binaria, Verdadero o Falso, dos opciones, avanzar o no, una función "if" evalua si cierta variable es verdadera o falsa (determinado por un "operador de comparación", por ej. si x es mayor o menor a y, etc...) y ejecutan el código en consecuencia, si resulta ser verdadera, corre cierto código, y si resulta ser falsa, corre otra parte.
