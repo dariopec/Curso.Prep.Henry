@@ -1,0 +1,5 @@
+For: Es un bucle, repetir código una y otra vez hasta alcanzar un punto previamente definido (sino, se genera un "bucle infinito" que se repite por siempre). Se utilizan para realizar una y otra vez la misma tarea y no tener que repetirse (Don`t Repeat Yourself).
+`&&`, `||`, `!`: Son operadores lógicos de comparacion. 
+`&&`, signfica "Y", y permiten comparar si ambas variables son verdaderas (ej. si 1>0 Y 2>1). Es requisito que se cumplan ambas condiciones para ejecutar el código, si alguna es falsa, el mismo no corre.
+ `||`, significa "O/Or", que una condicion O a la otra sea verdadera (ej. si 1<0 O 1<2). En este caso con que una sola de las condiciones se cumpla, el codigo corre.
+  `!`, significa "NO/Not", que la condicion NO sea verdadera (ej. si 1!===1). En este caso, 1 es igual a 1, pero el operador !, devuelve lo contrario (NOT===), por lo que el código no correra.
